@@ -5,51 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cômputo</title>
+    <link rel="stylesheet" href="/style/style.css">
     <script type="text/javascript" src="js/calculator.js"></script>
 </head>
 <body>
     <main>
-        <section>
+        <section class="output-box">
             <form action="">
-                <input type="text">
+                <input type="text" class="output">
             </form>
         </section>
-        <section>
+        <section class="board">
             <form action="">
                 <div>
-                    <input type="button" value="AC" id="clean">
-                    <input type="button" value="+/-" id="changeSignal">
-                    <input type="button" value="%" id="percent">
-                    <input type="button" value="/" class="signal">
+                    <input type="button" value="AC" class="buttons util-button">
+                    <input type="button" value="+/-" class="buttons util-button">
+                    <input type="button" value="%" class="buttons util-button">
+                    <input type="button" value="/" class="buttons signal">
                 </div>
                 <div>
-                    <input type="button" value="7" class="numbers">
-                    <input type="button" value="8" class="numbers">
-                    <input type="button" value="9" class="numbers">
-                    <input type="button" value="X" class="signal">
+                    <input type="button" value="7" class="buttons numbers">
+                    <input type="button" value="8" class="buttons numbers">
+                    <input type="button" value="9" class="buttons numbers">
+                    <input type="button" value="X" class="buttons signal">
                 </div>
                 <div>
-                    <input type="button" value="4" class="numbers">
-                    <input type="button" value="5" class="numbers">
-                    <input type="button" value="6" class="numbers">
-                    <input type="button" value="-" class="signal">
+                    <input type="button" value="4" class="buttons numbers">
+                    <input type="button" value="5" class="buttons numbers">
+                    <input type="button" value="6" class="buttons numbers">
+                    <input type="button" value="-" class="buttons signal">
                 </div>
                 <div>
-                    <input type="button" value="1" class="numbers">
-                    <input type="button" value="2" class="numbers">
-                    <input type="button" value="3" class="numbers">
-                    <input type="button" value="+" class="signal">
+                    <input type="button" value="1" class="buttons numbers">
+                    <input type="button" value="2" class="buttons numbers">
+                    <input type="button" value="3" class="buttons numbers">
+                    <input type="button" value="+" class="buttons signal">
                 </div>
                 <div>
-                    <input type="button" value="0" class="numbers">
-                    <input type="button" value="," id="dot">
-                    <input type="button" value="=" id="result">
-                    
+                    <input type="button" value="0" class="buttons numbers zero">
+                    <input type="button" value="," class="buttons numbers">
+                    <input type="button" value="=" class="buttons signal">
                 </div>
                 
             </form>
         </section>
     </main>
-
 </body>
 </html>

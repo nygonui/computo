@@ -1,180 +1,95 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
-
 * {
     margin: 0;
     padding: 0;
-}
 
-html {
-    background-color: #BEDD8D;
-    font-family: 'Poppins', sans-serif;
+    --background: #101010;
+    --util-signals: #000000;
+    --char: #FFFFFF;
+    --util-buttons: #E7E7E7;
+    --util-buttons-hover: #c5c5c5;
+    --numbers-buttons: #929292;
+    --numbers-buttons-hover: #818181;
+    --signal-buttons: #FF9900;
+    --signal-buttons-hover: #dd8809;
+
+    --output: #585858;
 }
 
 body {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background); 
+
 }
 
-/*----------header-----------*/
-
-header {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-    margin-top: 40px;
-}
-
-header section {
-    width: 80%;
-    height: 55px;
-    background-color: #495931;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    border-radius: 10px 10px 0 0;
-}
-
-header section img {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-}
-
-header section p {
-    color: #E7E7E7;
-    font-weight: bold;
-    font-size: 24px;
-}
-
-/*-----------main-------------*/
-
-main {
-    width: 100%;
-    height: 100%;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-/*output*/
+/****** output *******/
 .output {
-    width: 80%;
+    width: 100vw;
     height: 100px;
-    background-color: #000000;
 
-    border-radius: 0 0 10px 10px;
+    font-size: 50px;
 
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    background-color: var(--output);
+    border: none;
+
+    color: var(--char);
+
+    margin-bottom: 100px;
 }
 
-.output p{
-    color: white;
-    font-size: 32px;
-    
-    margin: 0 10px 5px 0;
-}
 
-/*keyboard*/
 
-.calculator-keyboard{
-    width: 80%;
 
-    display: flex;
-    flex-direction: column;
-
-    margin-top: 25px;
-    margin-bottom: 21px;
-}
-
-.line-keyboard {
-    display: flex;
-    
-    width: 100%;
-}
-
-.simbol, 
-.number {
-    width: 25%;
-    padding: 25px;
-    
-    cursor: pointer;
-    transition: all 0.2s;
-
-    display: flex;
+/***** teclado *****/
+.board {
+    width: 100vw;
+    display:flex;
     justify-content: center;
 }
 
-.simbol:hover {
-    background-color: #648a2c;
+.board div {
+    margin: 0 0 5px 0;
 }
 
-.number:hover {
-    background-color: #c4cabb;
+.buttons {
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    font-size: 25px;
 }
 
-.simbol {
-    background-color: #495931;
-    color: white;
+.buttons.zero{
+    width: 132px;
+    border-radius: 30%;
 }
 
-.number {
-    background-color: #FFFFFF;
+.signal {
+    background-color: var(--signal-buttons);
+    color: var(--char);
 }
 
-#parenteses {
-    border-radius: 5px 0 0 0;
+.signal:hover{
+    transition: 0.5s;
+    background-color: var(--signal-buttons-hover);
 }
 
-#delete{
-    border-radius: 0 5px 0 0;
+.util-button {
+    background-color: var(--util-buttons);
 }
 
-#um {
-    border-radius: 0 0 0 5px;
+.util-button:hover{
+    transition: 0.5s;
+    background-color: var(--util-buttons-hover)
 }
 
-#igual {
-    border-radius: 0 0 5px 0;
+.numbers {
+    background-color: var(--numbers-buttons);
+    color: var(--char);
 }
 
-/***********footer************/
-footer {
-    width: 100%;
-
-    background-color: #7E8C68;
-
-    display: flex;
-    justify-content: space-around;
+.numbers:hover{
+    transition: 0.5s;
+    background-color: var(--numbers-buttons-hover);
 }
 
-.desingerns-developers {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.desingerns-developers img {
-    width: 20px;
-}
-
-.desingerns-developers p {
-    color: #FFFFFF;
-    font-size: 12px;
-}
-
-
-
-/* @media only screen and (min-width: 600px) {
-    body {
-      background-color: lightblue;
-    }
-  } */
