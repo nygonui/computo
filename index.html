@@ -1,78 +1,55 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/style.css">
     <title>cômputo</title>
+    <script type="text/javascript" src="js/calculator.js"></script>
 </head>
-
 <body>
-    <header>
-        <section>
-            <img src="./img/operacoes-matematicas.png" alt="logo cômputo">
-            <p>cômputo</p>
-        </section>
-    </header>
     <main>
-        <section class="output">
-            <p>123</p>
+        <section>
+            <form action="">
+                <input type="text">
+            </form>
         </section>
-
-        <section class="calculator-keyboard">
-            <div class="line-keyboard">
-                <p class="simbol" id="borda1">(</p>
-                <p class="simbol">{</p>
-                <p class="simbol">[</p>
-                <p class="simbol" id="borda2">AC</p>
-            </div>
-            <div class="line-keyboard">
-                <p class="simbol">+</p>
-                <p class="simbol">-</p>
-                <p class="simbol">*</p>
-                <p class="simbol">/</p>
-            </div>
-            <div class="line-keyboard">
-                <p class="number">7</p>
-                <p class="number">8</p>
-                <p class="number">9</p>
-                <p class="number">0</p>
-            </div>
-            <div class="line-keyboard">
-                <p class="number">4</p>
-                <p class="number">5</p>
-                <p class="number">6</p>
-                <p class="simbol">,</p>
-            </div>
-            <div class="line-keyboard">
-                <p class="number" id="borda3">1</p>
-                <p class="number">2</p>
-                <p class="number">3</p>
-                <p class="simbol" id="borda4">=</p>
-            </div>
+        <section>
+            <form action="">
+                <div>
+                    <input type="button" value="AC" id="clean">
+                    <input type="button" value="+/-" id="changeSignal">
+                    <input type="button" value="%" id="percent">
+                    <input type="button" value="/" class="signal">
+                </div>
+                <div>
+                    <input type="button" value="7" class="numbers">
+                    <input type="button" value="8" class="numbers">
+                    <input type="button" value="9" class="numbers">
+                    <input type="button" value="X" class="signal">
+                </div>
+                <div>
+                    <input type="button" value="4" class="numbers">
+                    <input type="button" value="5" class="numbers">
+                    <input type="button" value="6" class="numbers">
+                    <input type="button" value="-" class="signal">
+                </div>
+                <div>
+                    <input type="button" value="1" class="numbers">
+                    <input type="button" value="2" class="numbers">
+                    <input type="button" value="3" class="numbers">
+                    <input type="button" value="+" class="signal">
+                </div>
+                <div>
+                    <input type="button" value="0" class="numbers">
+                    <input type="button" value="," id="dot">
+                    <input type="button" value="=" id="result">
+                    
+                </div>
+                
+            </form>
         </section>
     </main>
-    <footer>
-        <section class="desingerns-developers">
-            <p>
-                Arthur R. Avelar
-            </p>
-            <div>
-                <img src="./img/silhueta-do-logotipo-do-github-em-um-quadrado.png" alt="GitHub">
-                <img src="./img/linkedin.png" alt="LinkedIn">
-            </div>
-            
-        </section>
-        <section class="desingerns-developers">
-            <p>
-                Nicolas G. de Souza
-            </p>
-            <div>
-                <img src="./img/silhueta-do-logotipo-do-github-em-um-quadrado.png" alt="GitHub">
-                <img src="./img/linkedin.png" alt="LinkedIn">
-            </div>
-        </section>
-    </footer>
+
 </body>
 </html>

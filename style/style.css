@@ -129,19 +129,19 @@ main {
     background-color: #FFFFFF;
 }
 
-#borda1 {
+#parenteses {
     border-radius: 5px 0 0 0;
 }
 
-#borda2 {
+#delete{
     border-radius: 0 5px 0 0;
 }
 
-#borda3 {
+#um {
     border-radius: 0 0 0 5px;
 }
 
-#borda4 {
+#igual {
     border-radius: 0 0 5px 0;
 }
 
